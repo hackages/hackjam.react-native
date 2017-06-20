@@ -16,7 +16,7 @@ describe("Active trucks", () => {
 
 
   it("Should toggle truck", () => {
-    const truck: ITruck = {
+    const truck = {
       name : 'TEST',
       uuid : UUID,
     };
@@ -35,7 +35,7 @@ describe("Active trucks", () => {
   });
 
   it("Should toggle truck from non empty initial state", () => {
-    const truck: ITruck = {
+    const truck = {
       name : 'TEST',
       uuid : UUID,
     };
