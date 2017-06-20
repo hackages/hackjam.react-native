@@ -3,7 +3,6 @@
 ### Getting Started
 ```bash
 git clone https://github.com/hackages/hackcamp.react-native
-git checkout hackjam-3
 yarn
 # Run the app from Expo XDE
 # Happy Hacking ;-)
@@ -49,7 +48,7 @@ You should persist your redux store using [redux-persist](https://github.com/rt2
 Persist every reducers but the ui one
 
 #### Middlewares you said? 😷
-Write a middleware that stops the trucks from being created if their names containe any of the words that can be found in src/constants/dictionnary.js
+Write a middleware that stops the trucks from being created if their names contain any of the words that can be found in src/constants/dictionnary.js
 
 #### Notifications 🎵
 Using [the expo documentation](https://docs.expo.io/versions/v16.0.0/guides/push-notifications.html) extract your expo push notification token and posting it to http://calapez.me:4242/notifications.
