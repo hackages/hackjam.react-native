@@ -5,13 +5,11 @@ export const initialState = {
   isOnList: true,
 };
 
-/**
- * TODO: Implement this reducer
- *
- * Actions for this reducer:
- *
- * SWITCH_SCREENS: Toggles the isOnList property of the store
- *
- **/
+const reducer = {
+  [SWITCH_SCREENS]: (state) => ({...state, isOnList: !state.isOnList}),
+};
 
-export const ui = 'Something is missing here...';
+export const ui = (state = initialState, action) => {
+  const handler = reducer[action.type];
+  return handler ? handler(state) : state;
+};

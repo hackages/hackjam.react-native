@@ -13,24 +13,13 @@ export const initialTrucks = [{
   }
 ];
 
-
-/**
- * TODO: Implement this reducer
- *
- * Actions for this reducer:
- *
- * ADD_TRUCK: Takes this object as a parameter:
- *      {
- *        name,
- *        uuid
- *      }
- *      And you should add the following property: active: false
- *
- * TOGGLE_TRUCK: Takes a truck as a parameter and toggles its active flag
- *               It shou
- *
- */
+const reducer = {
+  [ADD_TRUCK]: (state, truck) => [...state, {...truck, active: false}],
+  [TOGGLE_TRUCK]: (state, payload) =>
+    state.map(t => t.uuid === payload ? {...t, active: !t.active} : t),
+};
 
 export const trucks = (state = initialTrucks, action) => {
-  return state;
+  const handler = reducer[action.type];
+  return handler ? handler(state, action.payload) : state;
 };
