@@ -2,7 +2,7 @@ import {filter, initialState} from '../../src/reducers/filter';
 import {SET_FILTER, setFilter} from "../../src/actions/filters";
 import {switchScreens} from "../../src/actions/ui";
 
-describe('Truck Reducer', () => {
+describe('Filter Reducer', () => {
   it('Should be a function', () => {
     expect(typeof filter).toBe('function');
   });

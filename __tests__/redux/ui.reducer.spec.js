@@ -27,16 +27,6 @@ describe('UI Reducer', () => {
       it('should return an action of type SWITCH_SCREENS', () => {
         expect(switchScreens().type).toBe('SWITCH_SCREENS');
       });
-
-      it('should take a string as a parameter and return it as its payload', () => {
-        const screen = 'test';
-        const expected = {
-          type: 'SWITCH_SCREENS',
-          payload: screen
-        };
-
-        expect(switchScreens(screen)).toEqual(expected);
-      });
     });
   });
 });
