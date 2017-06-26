@@ -28,6 +28,7 @@ For each test suite you'll find a reducer and a file for the actions.
 The reducers are store stored in `src/reducers`.
 The actions are stored in `src/actions`.
 
+You should start with the `UI` reducer then move onto the `filters` and finally implement the `trucks` reducer
 
 ## Part 2 - React Redux
 
